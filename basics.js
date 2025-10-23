@@ -46,5 +46,7 @@ var person = {name: "anil", age: 25, city: "new york"};
 console.log("Name: " + person.name + ", Age: " + person.age + ", City: " + person.city);
 
 //How to Import Functions or Variables From Another File
+// const { userName } = require("./data.js");
+// console.log("User Name is: " + userName);
 const data = require("./data.js");
-console.log(data.userName);
+console.log("User Name is: " + data.userName);
