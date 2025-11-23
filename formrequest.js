@@ -23,9 +23,6 @@ http.createServer((req, res) => {
          req.on("end", () => {
             let rawData = Buffer.concat(dataSet).toString();
             let readableData = querystring.parse(rawData);
-            res.write('<pre>' + JSON.stringify(readableData, null, 2) + '</pre>');
-            
-            
             console.log(readableData);
          });
          res.write('Form submitted successfully!');
